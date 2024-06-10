@@ -76,7 +76,8 @@ session_start();
       <td ><?= $art['artist']; ?></td>
       <td class="aksi">
 
-      <a href="details.php?id=<?= $art["id"]; ?>" class="badge text-bg-dark text-decoration-none">Details</a>
+        <a href="details.php?id=<?= $art["id"]; ?>" class="badge text-bg-dark text-decoration-none">Details</a>
+
 
             </td> 
       <td>
@@ -89,6 +90,7 @@ session_start();
   </tbody>
 </table>
 </div> 
-<script src="../js/script.js"></script>
 </body>
+<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 </html>

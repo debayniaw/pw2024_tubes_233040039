@@ -1,4 +1,8 @@
-    <?php
+<?php
+
+    ob_start();
+
+
         $conn = mysqli_connect('localhost', 'root', '', 'pw2024_tubes_233040039');
 
         function query($query) {
@@ -191,4 +195,3 @@
                 mysqli_query($conn, $query) or die (mysqli_error($conn));
                 return mysqli_affected_rows($conn);
         } 
-    ?>

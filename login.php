@@ -1,5 +1,5 @@
 <?php
- session_start();
+session_start();
 
  if (isset($_SESSION['login'])) {
      header("Location: index.php");
@@ -39,27 +39,35 @@
 
     <body>
         
+            
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand " href="#">The Most Expensive Painting</a>
+  <a href="#login" class="btn btn-outline-light">Login</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           </ul>
+               
+            
+          <li class="nav-item">
+                </li>
           <form class="d-flex" action="" method="post" role="search">
               <input class="form-control me-2 from-cari" type="text" name="keyword" autofocus placeholder="Search"  id="keyword" autocomplete="off">
               </form>
               <button class="btn btn-outline-light "type="submit" name="cari" id="tombol-cari">Search</button>
-              <li class="nav-item">
-                <a href="#login" class="btn btn-outline-light">Login</a>
-                </li>
+
+
     </div>
   </div>
 </nav>
 
    <div class="container" id="container">
+    <center><h1>The Most Expensive Painting</h1></center>
+    <br>
   
 
 <div class="row">
@@ -105,12 +113,12 @@
                 <div class="input_box">
                     <input type="submit" name="login" value="login" class="input-submit">
                 </div>
-
+              <center><p>Don't Have An Account?<a href="registrasi.php"> Sign Up Here</a></center>
         </div>
     </div>
-    </section>
+        </section>
     </form>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
+    <script src="js/user.js"></script>
     </html>

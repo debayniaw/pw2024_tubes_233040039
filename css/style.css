@@ -145,6 +145,7 @@ input-field:focus ~ .label, .input-field:valid .label {
   background: var(--second-color);
 }
 
+
 @media only screen and(max-width:564px) {
   .wrapper {
       padding: 20px;
