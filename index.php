@@ -90,7 +90,7 @@ session_start();
         <?php endforeach; ?>
   </tbody>
 </table>
-      <div>
+<div>
       <a href="logout.php" class="btn btn-dark">Logout</a>
       </div>
       <br><br>
