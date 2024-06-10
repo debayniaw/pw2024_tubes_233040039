@@ -38,7 +38,7 @@ session_start();
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      
+      <a href="logout.php" class="btn btn-outline-light">Logout</a>
       </ul>
       <form class="d-flex" action="" method="post" role="search">
         <input class="form-control me-2" type="text" name="keyword" autofocus placeholder="Search"  id="keyword" autocomplete="off">
@@ -91,11 +91,10 @@ session_start();
   </tbody>
 </table>
 <div>
-      <a href="logout.php" class="btn btn-dark">Logout</a>
-      </div>
-      <br><br>
+      
 </div> 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 <script src="../js/script.js"></script>
 </html>
