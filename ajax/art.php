@@ -19,6 +19,7 @@ $art = query($query);
             <th scope="col">Name</th>
             <th scope="col">Image</th>
             <th scope="col">Artist</th>
+            <th scope="col">Details</th>
             <th scope="col">Aksi</th>
         </tr>
     </thead>
@@ -30,7 +31,10 @@ $art = query($query);
                 <td><?= $art['name']; ?></td>
                 <td><img src="img/<?= $art["image"]; ?>" width="150"></td>
                 <td><?= $art['artist']; ?></td>
-                <td>
+                <td class="aksi">
+                     <a href="details.php?id=<?= $art["id"]; ?>" class="badge text-bg-dark text-decoration-none">Details</a>
+            </td> 
+                <td>                  
                     <a href="edit.php?id=<?= $art["id"]; ?>" class="badge text-bg-secondary text-decoration-none">Edit</a>
                     <a href="delete.php?id=<?= $art["id"]; ?>" class="badge text-bg-danger text-decoration-none" onclick="return confirm('yakin?');">Delete</a>
                 </td>
