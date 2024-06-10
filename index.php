@@ -38,9 +38,7 @@ session_start();
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a href="logout.php" class="btn btn-outline-light">Logout</a>
-        </li>
+      
       </ul>
       <form class="d-flex" action="" method="post" role="search">
         <input class="form-control me-2" type="text" name="keyword" autofocus placeholder="Search"  id="keyword" autocomplete="off">
@@ -55,7 +53,10 @@ session_start();
 <center><h2 class="h2 me-auto mb-2 mb-lg-0">The Most Expensive Painting</h2></center> 
 <a href="tambah.php" class="btn btn-dark">Add Painting</a>
 <br><br>
-    
+
+<!-- <li class="nav-item"> -->
+
+<!-- </li> -->
 <table class="table">
   <thead>
     <tr>
@@ -89,6 +90,10 @@ session_start();
         <?php endforeach; ?>
   </tbody>
 </table>
+      <div>
+      <a href="logout.php" class="btn btn-dark">Logout</a>
+      </div>
+      <br><br>
 </div> 
 </body>
 <script src="js/script.js"></script>
